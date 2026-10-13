@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Signup Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Website</h1>
+    <p>Welcome to my website</p>
+
+    <div class="box">
+        <h2>Login Form</h2>
+
+        <form>
+            <input type="email" placeholder="Enter Email" required>
+            <br>
+
+            <input type="password" placeholder="Enter Password"
+                minlength="8" required>
+            <br>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Forgot Password?</p>
+        <p>Don't have an account? <a href="#signup">Sign Up</a></p>
+    </div>
+
+    <div class="box" id="signup">
+        <h2>Signup Form</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Full Name" required>
+            <br>
+
+            <input type="email" placeholder="Enter Email" required>
+            <br>
+
+            <input type="password" id="pass"
+                placeholder="Create Password"
+                minlength="8" required>
+            <br>
+
+            <input type="password" id="confirm"
+                placeholder="Confirm Password" required>
+            <br>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p>Already have an account? <a href="#">Login</a></p>
+    </div>
+
+    <footer>
+        <p>My Website - 2026</p>
+    </footer>
+
+</body>
+</html>
